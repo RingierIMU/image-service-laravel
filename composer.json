@@ -1,0 +1,57 @@
+{
+    "name": "ringierimu/image-service-laravel",
+    "description": "Ringier SA Image Service Laravel integration",
+    "keywords": [],
+    "homepage": "https://github.com/RingierIMU/image-service-laravel",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Matthew Nessworthy",
+            "email": "matthew.nessworthy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.3",
+        "illuminate/support": ">= 6.0",
+        "ringierimu/image-service-php": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "nunomaduro/collision": "^6.2",
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "RingierIMU\\ImageService\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RingierIMU\\ImageService\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ],
+        "fix-code-style": [
+            "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --using-cache=no src tests"
+        ],
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RingierIMU\\ImageService\\ImageResizeServiceProvider"
+            ],
+            "aliases": {
+                "ImageResize": "ImageResize"
+            }
+        }
+    }
+}
