@@ -50,7 +50,7 @@
                 "RingierIMU\\ImageService\\ImageResizeServiceProvider"
             ],
             "aliases": {
-                "ImageResize": "ImageResize"
+                "ImageResize": "RingierIMU\\ImageService\\Facades\\ImageResize"
             }
         }
     }
