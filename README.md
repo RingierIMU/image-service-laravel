@@ -68,3 +68,4 @@ resolve(ImageResize::class)
         ] 
     );
 ```
+
