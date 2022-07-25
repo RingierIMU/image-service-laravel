@@ -19,7 +19,7 @@
         "nunomaduro/collision": "^6.2",
         "orchestra/testbench": "^7.0",
         "phpunit/phpunit": "^9.5",
-        "ringierimu/ringier-code-style": "^0.5.5"
+        "ringierimu/ringier-code-style": "^0.6"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -47,6 +47,16 @@
         }
     },
     "scripts": {
+        "post-install-cmd": [
+            "@dump-code-style-configs"
+        ],
+        "post-update-cmd": [
+            "@dump-code-style-configs"
+        ],
+        "dump-code-style-configs": [
+            "vendor/bin/ringier-code-style config:dump --pint --php-cs-fixer --phpcs --force --quiet",
+            "vendor/bin/ringier-code-style config:dump --styleci --quiet"
+        ],
         "post-autoload-dump": [
             "@php ./vendor/bin/testbench package:discover --ansi"
         ],
