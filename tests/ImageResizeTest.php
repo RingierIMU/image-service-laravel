@@ -18,7 +18,7 @@ final class ImageResizeTest extends TestCase
         );
 
         $this->assertEquals(
-            'https://i.rimu.ci/hz/pi/listing-thumb-360w/a6c9235a796ac9a4d40a425cf9194e9d/-/horizon-files-prod/pi/picture/qk4mz7j/e6be465dd23e0ef571fcdbd3f46bfe1c8486cd52.jpg',
+            'https://image-service.ringier.tech/hz/pi/listing-thumb-360w/a6c9235a796ac9a4d40a425cf9194e9d/-/horizon-files-prod/pi/picture/qk4mz7j/e6be465dd23e0ef571fcdbd3f46bfe1c8486cd52.jpg',
             $url
         );
     }
@@ -49,7 +49,7 @@ final class ImageResizeTest extends TestCase
         );
 
         $this->assertEquals(
-            'https://i.rimu.ci/t/hz/pi/og-template-1200w-630h/a02345306db7136af765a1b43e648f5b/-/eyJ0ZW1wbGF0ZSI6ImpvYi0wNC0yMDIyIiwicmVwbGFjZW1lbnRzIjp7InRpdGxlMSI6IlRpdGxlIGxpbmUgMSIsInRpdGxlMiI6IlRpdGxlIGxpbmUgMiIsInN1YnRpdGxlIjoiU3VidGl0bGUgbGluZSJ9LCJpbWFnZXMiOnsibG9nbyI6eyJmaWxlIjoiczM6XC9cL2hvcml6b24tZmlsZXMtcHJvZFwvcGlcL3BpY3R1cmVcL3FrNG16N2pcL2U2YmU0NjVkZDIzZTBlZjU3MWZjZGJkM2Y0NmJmZTFjODQ4NmNkNTIuanBnIn0sImJhY2tncm91bmQiOnsiZmlsZSI6InMzOlwvXC9ob3Jpem9uLWZpbGVzLXByb2RcL3BpXC9waWN0dXJlXC9xazRtejdqXC9lNmJlNDY1ZGQyM2UwZWY1NzFmY2RiZDNmNDZiZmUxYzg0ODZjZDUyLmpwZyJ9fX0%3D/pretty-seo-filename.jpg',
+            'https://image-service.ringier.tech/t/hz/pi/og-template-1200w-630h/a02345306db7136af765a1b43e648f5b/-/eyJ0ZW1wbGF0ZSI6ImpvYi0wNC0yMDIyIiwicmVwbGFjZW1lbnRzIjp7InRpdGxlMSI6IlRpdGxlIGxpbmUgMSIsInRpdGxlMiI6IlRpdGxlIGxpbmUgMiIsInN1YnRpdGxlIjoiU3VidGl0bGUgbGluZSJ9LCJpbWFnZXMiOnsibG9nbyI6eyJmaWxlIjoiczM6XC9cL2hvcml6b24tZmlsZXMtcHJvZFwvcGlcL3BpY3R1cmVcL3FrNG16N2pcL2U2YmU0NjVkZDIzZTBlZjU3MWZjZGJkM2Y0NmJmZTFjODQ4NmNkNTIuanBnIn0sImJhY2tncm91bmQiOnsiZmlsZSI6InMzOlwvXC9ob3Jpem9uLWZpbGVzLXByb2RcL3BpXC9waWN0dXJlXC9xazRtejdqXC9lNmJlNDY1ZGQyM2UwZWY1NzFmY2RiZDNmNDZiZmUxYzg0ODZjZDUyLmpwZyJ9fX0%3D/pretty-seo-filename.jpg',
             $url
         );
     }

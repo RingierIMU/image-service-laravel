@@ -29,7 +29,7 @@ abstract class TestCase extends OrchestraTestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('imageresize.url', 'https://i.rimu.ci/');
+        $app['config']->set('imageresize.url', 'https://image-service.ringier.tech/');
         $app['config']->set('imageresize.key', 'test-key');
     }
 }
