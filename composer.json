@@ -13,7 +13,7 @@
     "require": {
         "php": ">= 7.3",
         "illuminate/support": ">= 6.0",
-        "ringierimu/image-service-php": "^1.0.2"
+        "ringierimu/image-service-php": "^2.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.2",
